@@ -23,7 +23,7 @@ const App = () => {
   const onClick = async () => {
     if (!ref.current) {
       return;
-    }
+    };
 
     iframe.current.srcdoc = html;
 
