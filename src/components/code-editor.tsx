@@ -30,13 +30,13 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
             useTabs: false,
             semi: true,
             singleQuote: true
-        })
+        }).replace(/\n$/, '')
 
         editorRef.current.setValue(formatted)
     }
 
     return (
-        <div className="edtior-wrapper">
+        <div className="editor-wrapper">
             <button className="button button-format is-primary is-small" onClick={onFormatClick}>Format</button>
             <MonacoEditor
                 editorDidMount={onEditorDidMount}
