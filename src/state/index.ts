@@ -1,2 +1,2 @@
-const a = {};
-export default a;
+export * from './store'
+export * from './reducers'
