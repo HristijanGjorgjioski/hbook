@@ -1,5 +1,5 @@
-import { Direction } from "node:readline";
 import { ActionType } from "../action-types";
+import { Direction } from "../actions";
 import { CellTypes } from "../cell";
 
 export const updateCell = (id: string, content: string) => {
