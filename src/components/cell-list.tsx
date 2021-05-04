@@ -1,10 +1,14 @@
+import CellListItem from "./cell-list-item";
 import { useTypedSelector } from "./hooks/useTypedSelector"
 
 const CellList: React.FC = () => {
-    useTypedSelector((state) => state)
+    const cells = useTypedSelector(({ cells: { order, data } }) => order.map((id) => data[id]));
+
+    const renderedCells = cells.map((cell) => <CellListItem key={cell.id} cell={cell} />);
+
     return (
         <div>
-            
+            {renderedCells}
         </div>
     )
 }
