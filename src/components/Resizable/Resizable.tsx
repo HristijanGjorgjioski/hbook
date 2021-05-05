@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 interface ResizableProps {
   direction: 'horizontal' | 'vertical';
-}
+};
 
 const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
   let resizableProps: ResizableBoxProps;
@@ -29,7 +29,7 @@ const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
     return () => {
       window.removeEventListener('resize', listener);
     }
-  }, [width])
+  }, [width]);
 
   if (direction === 'horizontal') {
     resizableProps = {
@@ -51,7 +51,7 @@ const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
       width: Infinity,
       resizeHandles: ['s'],
     };
-  }
+  };
 
   return <ResizableBox {...resizableProps}>{children}</ResizableBox>;
 };

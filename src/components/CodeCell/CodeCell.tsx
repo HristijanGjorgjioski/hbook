@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import CodeEditor from '../CodeEditor/CodeEditor';
-// import Preview from '';
 import bundle from '../../bundler';
 import Resizable from '../Resizable/Resizable';
 import Preview from '../Preview/Preview';
@@ -15,12 +14,12 @@ const CodeCell = () => {
       const output = await bundle(input);
       setCode(output.code);
       setError(output.err);
-    }, 1000)
+    }, 1000);
 
     return () => {
-      clearTimeout(timer)
-    }
-  }, [input])
+      clearTimeout(timer);
+    };
+  }, [input]);
 
   return (
     <Resizable direction="vertical">

@@ -1,9 +1,9 @@
-import './styles.css'
-import { useActions } from "../hooks/useActions"
+import './styles.css';
+import { useActions } from "../hooks/useActions";
 
 interface ActionBarProps {
     id: string;
-}
+};
 
 const ActionBar: React.FC<ActionBarProps> = ({ id }) => {
     const { moveCell, deleteCell } = useActions();
@@ -26,7 +26,7 @@ const ActionBar: React.FC<ActionBarProps> = ({ id }) => {
                 </span>
             </button>
         </div>
-    )
-}
+    );
+};
 
-export default ActionBar
+export default ActionBar;

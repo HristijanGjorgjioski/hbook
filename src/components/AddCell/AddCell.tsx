@@ -1,10 +1,10 @@
-import { useActions } from '../hooks/useActions'
-import './styles.css'
+import { useActions } from '../hooks/useActions';
+import './styles.css';
 
 interface AddCellProps {
     previousCellId: string | null;
     forceVisible?: boolean;
-}
+};
 
 const AddCell: React.FC<AddCellProps> = ({ previousCellId, forceVisible }) => {
     const { insertCellAfter } = useActions();
@@ -27,8 +27,8 @@ const AddCell: React.FC<AddCellProps> = ({ previousCellId, forceVisible }) => {
             </div>
             <div className="divider"></div>
         </div>
-    )
-}
+    );
+};
 
-export default AddCell
+export default AddCell;
 

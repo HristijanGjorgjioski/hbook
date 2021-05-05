@@ -1,12 +1,12 @@
-import './styles.css'
-import { Cell } from "../../../state"
+import './styles.css';
+import { Cell } from "../../../state";
 import ActionBar from "../../ActionBar/ActionBar";
 import CodeCell from "../../CodeCell/CodeCell";
 import TextEditor from "../../TextEditor/TextEditor";
 
 interface CellListItemProps {
-    cell: Cell
-}
+    cell: Cell;
+};
 
 const CellListItem: React.FC<CellListItemProps> = ({ cell }) => {
     let child: JSX.Element;
@@ -28,7 +28,7 @@ const CellListItem: React.FC<CellListItemProps> = ({ cell }) => {
         <div className="cell-list-item">
             {child}
         </div>
-    )
-}
+    );
+};
 
-export default CellListItem
+export default CellListItem;
