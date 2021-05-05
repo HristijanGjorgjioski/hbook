@@ -1,7 +1,7 @@
 import { Fragment } from "react";
-import AddCell from "./AddCell/AddCell";
-import CellListItem from "./cell-list-item";
-import { useTypedSelector } from "./hooks/useTypedSelector";
+import AddCell from "../AddCell/AddCell";
+import CellListItem from "./CellListItem/cell-list-item";
+import { useTypedSelector } from "../hooks/useTypedSelector";
 
 const CellList: React.FC = () => {
     const cells = useTypedSelector(({ cells: { order, data } }) => order.map((id) => data[id]));
