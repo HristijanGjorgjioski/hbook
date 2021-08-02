@@ -22,7 +22,7 @@ To build this application I have used next technologies:
 #### Note: While building this app I have learned a lot about Typescript and I can say that I have strong knowledge with Typescript!
 
 ## Important
-  When you use the app please be patinet. Code may be running slower beacuse I use free sites for deployment, and therefore the requests are slower.
+  When you use the app please be patinet. App may be running slower beacuse I use free sites for deployment, and therefore the requests are slower.
   
 # Thank you!
 
